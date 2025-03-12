@@ -1,0 +1,77 @@
+# Gaze Detection
+
+## Overview
+This project implements a **Gaze Detection Model** using Deep Learning. It predicts the gaze direction from an image of a person's face.
+
+## Features
+- **Preprocessing script** to format data
+- **Deep Learning Model** trained on gaze images
+- **Model inference** to predict gaze direction
+- **Google Drive integration** for handling large dataset files
+
+##  Installation
+
+### Clone the Repository
+```sh
+git clone https://github.com/Vibsgremlin/gaze-detection.git
+cd gaze-detection
+```
+
+### Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+## Dataset Handling
+Since `.npy` files exceed GitHub’s file size limit, they are stored in **Google Drive**. A script is provided to download them automatically.
+
+### Download Dataset Files
+Run the script to download `X_train.npy` and `X_test.npy` from Google Drive:
+```sh
+python download_data.py
+```
+
+This script will fetch the dataset and save it inside the `data/` directory.
+
+## Training the Model
+Run the following command to train the model:
+```sh
+python train.py
+```
+
+## Testing the Model
+To test the model on an image, use:
+```sh
+python test.py --image path/to/image.jpg
+```
+
+Visualizing Predictions
+To overlay predictions on images and visualize results, use:
+```sh
+python visualize.py --image path/to/image.jpg
+```
+
+ Project Structure
+```
+├── data/                # Folder for large dataset files (auto-downloaded)
+├── gaze_model.h5        # Trained model
+├── preprocess.py        # Preprocessing script
+├── train.py             # Training script
+├── test.py              # Model inference script
+├── visualize.py         # Script to overlay predictions on images
+├── download_data.py     # Script to download large files from Google Drive
+├── requirements.txt     # Python dependencies
+├── .gitignore           # Ignore large dataset files
+├── README.md            # Project documentation
+```
+
+ References
+- [Git LFS Documentation](https://git-lfs.github.com/)
+- [Google Drive File Sharing](https://drive.google.com/)
+
+ License
+This project is licensed under the **MIT License**.
+
+---
+Now you are ready to use the Gaze Detection Model!
+
