@@ -66,3 +66,8 @@ flowchart LR
   - the class labels in [`test.py`](C:\Users\91965\cars24\github-readme-batch\GazeDetect\test.py) list nine gaze directions, while [`train.py`](C:\Users\91965\cars24\github-readme-batch\GazeDetect\train.py) currently trains a three-class output layer, so the labeling story is inconsistent
   - dataset paths are hard-coded to a local Windows directory, which makes the project harder to reproduce on another machine
   - the repo description mentions Google Drive and helper scripts in [`gzd.txt`](C:\Users\91965\cars24\github-readme-batch\GazeDetect\gzd.txt), but those helper files are not present in the checked-in code
+
+## Supporting Docs
+- [Architecture diagram](docs/architecture.png)
+- [Evaluation logs and outputs](docs/evaluation.md)
+- [Sample inputs and outputs](docs/sample_io.md)
