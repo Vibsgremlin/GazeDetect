@@ -1,0 +1,4 @@
+{
+  "image_path": "sample_dataset/TestSet/BottomCenter/557.jpg",
+  "preprocess": { "grayscale": true, "resize": [64, 64] }
+}
